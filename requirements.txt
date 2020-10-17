@@ -2,3 +2,4 @@
 django
 gunicorn
 django-heroku
+python-decouple==3.1
