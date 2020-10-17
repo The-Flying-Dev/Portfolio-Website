@@ -1,4 +1,5 @@
 import os
+from decouple import config
 
 """
 Django settings for portfolio project.
@@ -22,12 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('debug')
+DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['dranswebsite.herokuapp.com']
+ALLOWED_HOSTS = ['dranswebsite.herokuapp.com','localhost']
 
 
 # Application definition
@@ -80,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portfoliodata',
-        'USER':os.environ.get('db_user'),
-        'PASSWORD':os.environ.get('db_pass'),
+        'USER': config('USER'),
+        'PASSWORD': config('PASSWORD'),
         'HOST':'localhost',
         'PORT':'5432',
     }
