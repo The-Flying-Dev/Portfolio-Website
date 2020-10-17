@@ -1,5 +1,6 @@
 import os
 from decouple import config
+import django_heroku
 
 """
 Django settings for portfolio project.
@@ -132,3 +133,5 @@ STATIC_URL = '/static/'
 
 MEDIA_ROUTE = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+django_heroku.settings(locals())
