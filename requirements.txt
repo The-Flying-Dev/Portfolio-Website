@@ -66,12 +66,11 @@ PyQt5==5.15.0
 PyQt5-sip==12.8.1
 pyrsistent==0.16.0
 python-dateutil==2.8.1
-pytz==2020.1
-pywin32==227
-pywinpty==0.5.7
-pyzmq==19.0.1
-qtconsole==4.7.4
-QtPy==1.9.0
+
+
+
+
+
 requests==2.23.0
 scipy==1.4.1
 Send2Trash==1.5.0
