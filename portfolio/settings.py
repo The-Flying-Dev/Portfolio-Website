@@ -1,5 +1,5 @@
 import os
-from decouple import config
+
 import django_heroku
 
 """
