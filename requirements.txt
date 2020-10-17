@@ -1,4 +1,4 @@
--e 
+
 django
 gunicorn
 django-heroku
