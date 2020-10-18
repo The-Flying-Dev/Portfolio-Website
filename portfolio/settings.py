@@ -25,10 +25,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'f962869f3a395eeaf56c5a94a4816c39550a7de71eecb2eb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
+DEBUG = True
 
 ALLOWED_HOSTS = ['dranswebsite.herokuapp.com','localhost']
 
@@ -84,8 +84,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portfoliodata',
-        'USER': config('USER'),
-        'PASSWORD': config('PASSWORD'),
+        'USER': 'postgres',
+        'PASSWORD': 'dranwood',
         'HOST':'localhost',
         'PORT':'5432',
     }
